@@ -18,7 +18,7 @@ public class AppointmentController {
 
     // GET A APPOINTMENT
     @PostMapping("/appointment")
-    @CrossOrigin(origins = "http://127.0.0.1:5500")
+//    @CrossOrigin(origins = "http://127.0.0.1:5500")
     public AppointmentResponseDTO getAppoint(@RequestBody AppointmentDTO appointment) {
         return appointmentService.bookAppointment(appointment);
     }

@@ -16,7 +16,7 @@ public class PatientController {
     }
 
     // ADMIT A PATIENT
-    @CrossOrigin(origins = "http://127.0.0.1:5500")
+//    @CrossOrigin(origins = "http://127.0.0.1:5500")
     @PostMapping("/patient")
     public PatientDTO addPatient(@RequestBody PatientDTO patient) {
         return patientService.admitPatient(patient);
