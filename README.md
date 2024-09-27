@@ -34,23 +34,23 @@ The application exposes REST API endpoints to handle hospital operations such as
 - **Request Body**:
   ```json
   {
-    "patient_id": 1,
-    "doctor_id": 1,
-    "day": 13,
-    "month": 9,
-    "year": 2024
+    "patient_id": "int",
+    "doctor_id": "int",
+    "day": "int",
+    "month": "int",
+    "year": "int"
   }
   ```
 - **Response**:
     ```json
     {
-        "patient_id": 1,
-        "patient_name": "null null",
-        "doctor_id": 1,
-        "doctor_name": "null null",
-        "day": 13,
-        "month": 9,
-        "year": 2024
+        "patient_id": "int",
+        "patient_name": "String",
+        "doctor_id": "int",
+        "doctor_name": "String",
+        "day": "int",
+        "month": "int",
+        "year": "int"
     }
     ```
 - **Description**: This endpoint allows booking an appointment.
@@ -61,13 +61,13 @@ The application exposes REST API endpoints to handle hospital operations such as
 - **Response**:
     ```json
     {
-        "patient_id": 1,
-        "patient_name": "John Smith",
-        "doctor_id": 1,
-        "doctor_name": "Helen Cho",
-        "day": 13,
-        "month": 9,
-        "year": 2024
+        "patient_id": "int",
+        "patient_name": "String",
+        "doctor_id": "int",
+        "doctor_name": "String",
+        "day": "int",
+        "month": "int",
+        "year": "int"
     }
     ```
 - **Description**: This endpoint retrieves an appointment by its ID.
@@ -79,13 +79,13 @@ The application exposes REST API endpoints to handle hospital operations such as
     ```json
     [
       {
-        "patient_id": 1,
-        "patient_name": "John Smith",
-        "doctor_id": 1,
-        "doctor_name": "Helen Cho",
-        "day": 13,
-        "month": 9,
-        "year": 2024
+        "patient_id": "int",
+        "patient_name": "String",
+        "doctor_id": "int",
+        "doctor_name": "String",
+        "day": "int",
+        "month": "int",
+        "year": "int"
       }
     ]
     ```
@@ -98,13 +98,13 @@ The application exposes REST API endpoints to handle hospital operations such as
     ```json
     [
       {
-        "patient_id": 1,
-        "patient_name": "John Smith",
-        "doctor_id": 1,
-        "doctor_name": "Helen Cho",
-        "day": 13,
-        "month": 9,
-        "year": 2024
+        "patient_id": "int",
+        "patient_name": "String",
+        "doctor_id": "int",
+        "doctor_name": "String",
+        "day": "int",
+        "month": "int",
+        "year": "int"
       }
     ]
     ```
@@ -117,13 +117,13 @@ The application exposes REST API endpoints to handle hospital operations such as
     ```json
     [
       {
-        "patient_id": 1,
-        "patient_name": "John Smith",
-        "doctor_id": 1,
-        "doctor_name": "Helen Cho",
-        "day": 13,
-        "month": 9,
-        "year": 2024
+        "patient_id": "int",
+        "patient_name": "String",
+        "doctor_id": "int",
+        "doctor_name": "String",
+        "day": "int",
+        "month": "int",
+        "year": "int"
       }
     ]
     ```
@@ -136,13 +136,13 @@ The application exposes REST API endpoints to handle hospital operations such as
     ```json
     [
       {
-        "patient_id": 1,
-        "patient_name": "John Smith",
-        "doctor_id": 1,
-        "doctor_name": "Helen Cho",
-        "day": 13,
-        "month": 9,
-        "year": 2024
+        "patient_id": "int",
+        "patient_name": "String",
+        "doctor_id": "int",
+        "doctor_name": "String",
+        "day": "int",
+        "month": "int",
+        "year": "int"
       }
     ]
     ```
@@ -162,19 +162,19 @@ The application exposes REST API endpoints to handle hospital operations such as
 - **Request Body**:
     ```json
      {
-        "firstname": "John",
-        "lastname": "Smith",
-        "gender": "Male",
-        "age": 22
+        "firstname": "String",
+        "lastname": "String",
+        "gender": "String",
+        "age": "int"
      }
      ```
 - **Response**:
     ```json
      {
-        "firstname": "John",
-        "lastname": "Smith",
-        "gender": "Male",
-        "age": 22
+        "firstname": "String",
+        "lastname": "String",
+        "gender": "String",
+        "age": "int"
      }
      ```
 - **Description**: This endpoint allows admitting a new patient.
@@ -185,10 +185,10 @@ The application exposes REST API endpoints to handle hospital operations such as
 - **Response**:
      ```json
      {
-        "firstname": "John",
-        "lastname": "Smith",
-        "gender": "Male",
-        "age": 22
+        "firstname": "String",
+        "lastname": "String",
+        "gender": "String",
+        "age": "int"
      }
      ```
 - **Description**: Retrieves a patient's details by their ID.
@@ -200,10 +200,10 @@ The application exposes REST API endpoints to handle hospital operations such as
      ```json
      [
        {
-         "firstname": "John",
-         "lastname": "Smith",
-         "gender": "Male",
-         "age": 22
+         "firstname": "String",
+         "lastname": "String",
+         "gender": "String",
+         "age": "int"
        }
      ]
      ```
@@ -216,10 +216,10 @@ The application exposes REST API endpoints to handle hospital operations such as
     ```json
     [
       {
-        "firstname": "John",
-        "lastname": "Smith",
-        "gender": "Male",
-        "age": 22
+        "firstname": "String",
+        "lastname": "String",
+        "gender": "String",
+        "age": "int"
       }
     ]
     ```
@@ -239,17 +239,17 @@ The application exposes REST API endpoints to handle hospital operations such as
 - **Request Body**:
     ```json
       {
-        "firstname": "Helen",
-        "lastname": "Cho",
-        "specialization": "Cardiologist"
+        "firstname": "String",
+        "lastname": "String",
+        "specialization": "String"
       }
     ```
 - **Response**:
     ```json
       {
-        "firstname": "Helen",
-        "lastname": "Cho",
-        "specialization": "Cardiologist"
+        "firstname": "String",
+        "lastname": "String",
+        "specialization": "String"
       }
     ```
 - **Description**: This endpoint allows registering a new doctor.
@@ -260,9 +260,9 @@ The application exposes REST API endpoints to handle hospital operations such as
 - **Response**:
     ```json
       {
-        "firstname": "Helen",
-        "lastname": "Cho",
-        "specialization": "Cardiologist"
+        "firstname": "String",
+        "lastname": "String",
+        "specialization": "String"
       }
     ```
 - **Description**: Retrieves a doctor's details by their ID.
@@ -274,9 +274,9 @@ The application exposes REST API endpoints to handle hospital operations such as
     ```json
       [
         {
-            "firstname": "Helen",
-            "lastname": "Cho",
-            "specialization": "Cardiologist"
+            "firstname": "String",
+            "lastname": "String",
+            "specialization": "String"
         }
       ]
     ```
@@ -289,9 +289,9 @@ The application exposes REST API endpoints to handle hospital operations such as
     ```json
       [
         {
-            "firstname": "Helen",
-            "lastname": "Cho",
-            "specialization": "Cardiologist"
+            "firstname": "String",
+            "lastname": "String",
+            "specialization": "String"
         }
       ]
     ```
@@ -304,9 +304,9 @@ The application exposes REST API endpoints to handle hospital operations such as
     ```json
       [
         {
-            "firstname": "Helen",
-            "lastname": "Cho",
-            "specialization": "Cardiologist"
+            "firstname": "String",
+            "lastname": "String",
+            "specialization": "String"
         }
       ]
     ```
